@@ -1,0 +1,10 @@
+# requirements-dev.txt
+black
+ruff
+pytest
+pytest-asyncio
+mypy
+pre-commit
+ipython
+ptpython
+debugpy
