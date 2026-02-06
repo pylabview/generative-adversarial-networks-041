@@ -1,3 +1,5 @@
+# Generative Adversarial Networks (GANs)
+
 1. This study ran the simulation on a 16" Mac Pro with the following specifications:
 
 **ProductName:            macOS**
