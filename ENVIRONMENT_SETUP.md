@@ -77,6 +77,10 @@ Run the folowing to confirm TensoFlow is installed and detects GPU
 
 ```bash
 python -c "import tensorflow as tf; print(tf.__version__); print(tf.config.list_physical_devices('GPU'))"
+
+### Expected or similar output
+2.18.1
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 ```
 
 ## 6) Run experiment
