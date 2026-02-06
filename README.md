@@ -5,7 +5,7 @@
 
 -  Q1: Minimax loss in GANs and why it creates “competitive” training
 
-GANs are framed as a **two-player minimax game** where the discriminator $D$ tries to correctly classify real vs. fake samples, while the generator $G$ tries to produce fake samples that **fool** $D$ (Dingari, n.d.; Goodfellow et al., 2014).040---Module-4---Generative-Adv… The classic objective is:
+GANs are framed as a **two-player minimax game** where the discriminator $D$ tries to correctly classify real vs. fake samples, while the generator $G$ tries to produce fake samples that **fool** $D$ (Dingari, n.d.; Goodfellow et al., 2014). The classic objective is:
 
 
 $$
@@ -30,7 +30,7 @@ Mode collapse can occur because the adversarial objective rewards $G$ for genera
 
 -  Q3: Role of the discriminator in adversarial training
 
-The discriminator is the **learning signal provider**: it is trained as a binary classifier that outputs $D(x)\in[0,1]$, the estimated probability that input $x$ is real, and it learns by seeing both real samples and generator-produced fakes (Dingari, n.d.).040---Module-4---Generative-Adv… A standard discriminator loss is:
+The discriminator is the **learning signal provider**: it is trained as a binary classifier that outputs $D(x)\in[0,1]$, the estimated probability that input $x$ is real, and it learns by seeing both real samples and generator-produced fakes (Dingari, n.d.). A standard discriminator loss is:
 
 $$
 \mathcal{L}_D
@@ -39,7 +39,7 @@ $$
 \mathbb{E}_{z\sim p_z}[\log(1-D(G(z)))].
 $$
 
-During training, $D$ improves its ability to detect fake data, while $G$ updates using gradients that flow *through* $D$, improving generation specifically in directions that make fakes harder to detect (Dingari, n.d.; Goodfellow et al., 2014).040---Module-4---Generative-Adv… This adversarial loop—alternating updates to $D$ and $G$—creates the dynamic competition that drives GAN learning (Dingari, n.d.).040---Module-4---Generative-Adv…
+During training, $D$ improves its ability to detect fake data, while $G$ updates using gradients that flow *through* $D$, improving generation specifically in directions that make fakes harder to detect (Dingari, n.d.; Goodfellow et al., 2014).040---Module-4---Generative-Adv… This adversarial loop—alternating updates to $D$ and $G$—creates the dynamic competition that drives GAN learning (Dingari, n.d.)
 
 ------
 
