@@ -78,6 +78,8 @@ Salimans, T., Goodfellow, I., Zaremba, W., Cheung, V., Radford, A., & Chen, X. (
 
 ```python
 import os, certifi
+# Fix SSL certificate issues (common on macOS, venvs, and Jupyter)
+# by explicitly pointing Python and `requests` to a trusted CA bundle.
 os.environ["SSL_CERT_FILE"] = certifi.where()
 os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 ```
