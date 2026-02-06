@@ -1,4 +1,4 @@
-# requirements.txt
+# requirements.txt for MacOS Silicone M4
 jupyterlab
 pandas
 seaborn
@@ -12,6 +12,5 @@ ipywidgets
 torch
 dill
 torchvision
-tensorflow
-tensorflow-metal
-
+tensorflow==2.18.*
+tensorflow-metal==1.2.0
